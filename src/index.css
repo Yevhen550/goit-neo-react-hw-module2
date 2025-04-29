@@ -1,15 +1,14 @@
 :root {
   --text-color: #212121;
-  --white-text-color: #fff;
+  --white-text-color: #83e87a;
   --dark-bg-img: #3f3c3c;
 
   --profile-stats-bg-color: #eee;
   --profile-stats-border-color: #ccc;
 
   --online-status-color: green;
-  --offline-status-color: red;
+  --offline-status-color: rgb(230, 114, 114);
 
-  --thead-bg-color: tomato;
   --trow-bg-color: #efefef;
   --trow-accent-bg-color: beige;
   --table-border-color: #f9f9f9;

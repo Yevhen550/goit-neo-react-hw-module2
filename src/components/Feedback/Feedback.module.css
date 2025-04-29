@@ -1,0 +1,7 @@
+.feedbackList {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--profile-stats-bg-color);
+  font-size: 20px;
+}

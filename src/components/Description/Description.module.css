@@ -1,0 +1,15 @@
+.description {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.descriptionTitle {
+  color: var(--white-text-color);
+}
+.descriptionText {
+  color: var(--profile-stats-bg-color);
+  font-size: 20px;
+  text-align: center;
+}
