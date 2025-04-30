@@ -1,5 +1,4 @@
 import { useState } from "react";
-import s from "./App.module.css";
 import Description from "./components/Description/Description";
 import Options from "./components/Options/Options";
 import Notification from "./components/Notification/Notification";
