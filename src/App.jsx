@@ -15,7 +15,11 @@ function App() {
   return (
     <Container>
       <Description />
-      <Options good={`Good: ${reviews.good}`} />
+      <Options name={reviews.bad} />
+      <Options />
+      <Options />
+      <Options />
+      <Options />
       <Notification message="There is no feedback" />
       <Feedback />
     </Container>
