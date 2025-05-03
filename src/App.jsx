@@ -14,6 +14,9 @@ function App() {
   const [feedback, setFeedback] = useState(getInitialFeedback);
 
   const total = feedback.good + feedback.neutral + feedback.bad;
+  const positivePercentage = total
+    ? Math.round((feedback.good / total) * 100)
+    : 0;
 
   useEffect(() => {
     localStorage.setItem("feedback", JSON.stringify(feedback));
@@ -39,6 +42,7 @@ function App() {
           neutral={feedback.neutral}
           bad={feedback.bad}
           total={total}
+          positive={positivePercentage}
         />
       )}
     </Container>
