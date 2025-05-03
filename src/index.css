@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding-top: 20px;
   padding-bottom: 20px;
-  background: var(--dark-bg-img);
+  background: #604d4d;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

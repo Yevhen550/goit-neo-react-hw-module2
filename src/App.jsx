@@ -12,11 +12,13 @@ function App() {
     bad: 0,
   });
 
+  console.log(reviews);
+
   return (
     <Container>
       <Description />
-      <Options />
-      <Notification message="There is no feedback" />
+      <Options onLeaveFeedback={reviews} />
+      {/* <Notification message="There is no feedback" /> */}
       <Feedback />
     </Container>
   );
