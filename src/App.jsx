@@ -6,19 +6,15 @@ import Feedback from "./components/Feedback/Feedback";
 import Container from "./components/Container/Container";
 
 function App() {
-  const reviews = {
+  const [reviews, setReviews] = useState({
     good: 0,
     neutral: 0,
     bad: 0,
-  };
+  });
 
   return (
     <Container>
       <Description />
-      <Options name={reviews.bad} />
-      <Options />
-      <Options />
-      <Options />
       <Options />
       <Notification message="There is no feedback" />
       <Feedback />
