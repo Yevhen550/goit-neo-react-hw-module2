@@ -1,20 +1,22 @@
 import s from "./Options.module.css";
 
-const Options = ({ onLeaveFeedback }) => {
+const Options = ({ onLeaveFeedback, hasFeedback }) => {
   return (
     <div className={s.buttonList}>
-      <button className={s.button_85} onClick={() => onLeaveFeedback("good")}>
+      <button className={s.btn} onClick={() => onLeaveFeedback("good")}>
         Good
       </button>
-      <button
-        className={s.button_85}
-        onClick={() => onLeaveFeedback("neutral")}
-      >
+      <button className={s.btn} onClick={() => onLeaveFeedback("neutral")}>
         Neutral
       </button>
-      <button className={s.button_85} onClick={() => onLeaveFeedback("bad")}>
+      <button className={s.btn} onClick={() => onLeaveFeedback("bad")}>
         Bad
       </button>
+      {hasFeedback && (
+        <button className={s.btn} onClick={() => onLeaveFeedback("reset")}>
+          Reset
+        </button>
+      )}
     </div>
   );
 };
